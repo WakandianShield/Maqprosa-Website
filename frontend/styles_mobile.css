@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px) {
+    .nav-link {
+        font-size: 1em;
+    }
+
     footer {
         padding: 3.5em 6vw 2.2em;
         text-align: center;
@@ -150,12 +154,14 @@
     }
 
     .clients {
-        position: static;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
-        height: clamp(52px, 6vh, 68px);
+        height: clamp(60px, 7vh, 72px);
         padding: 0.3em 0;
-        margin: 0.8rem 0 0;
-        margin-top: auto;
+        margin: 0;
         display: flex;
         align-items: center;
     }
@@ -815,7 +821,7 @@
         grid-template-columns: 1fr;
         gap: 0.5rem;
         height: fit-content;
-        width: min(300px, 100%);
+        width: 90%;
         margin: 0 0 6em 0;
         text-align: center;
     }
