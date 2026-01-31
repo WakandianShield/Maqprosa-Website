@@ -223,8 +223,78 @@
         font-size: 1.2rem;
     }
 
+    .services {
+        padding: 4em 6vw 3.5em;
+    }
+
+    .services h2 {
+        font-size: clamp(1.8rem, 5vw, 2.6rem);
+        margin: 0.4rem 0 1.8rem;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+    }
+
+    .service-item {
+        padding: 1.4rem 1.2rem;
+        border-radius: 1.1rem;
+        gap: 0.6rem;
+    }
+
+    .service-icon {
+        width: 80px;
+        height: 65px;
+    }
+
+    .service-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .services-btn {
+        padding: 0.8em 1.6em;
+        font-size: 0.95rem;
+    }
+
     footer {
-        padding: 1.5em;
+        padding: 2.5em 6vw 1.5em;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        width: 100%;
+        margin: 0 auto 1.5rem;
+        justify-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section ul {
+        justify-items: center;
+    }
+
+    .footer-map iframe {
+        height: 180px;
     }
 
     footer p {
@@ -440,8 +510,74 @@
         font-size: 1.1rem;
     }
 
+    .services {
+        padding: 3.2em 5vw 2.5em;
+    }
+
+    .services h2 {
+        font-size: clamp(1.6rem, 5.5vw, 2.3rem);
+        margin: 0.3rem 0 1.5rem;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        max-width: 100%;
+    }
+
+    .service-item {
+        padding: 1.2rem 1rem;
+        border-radius: 1rem;
+        gap: 0.5rem;
+    }
+
+    .service-icon {
+        width: 70px;
+        height: 55px;
+    }
+
+    .service-item h3 {
+        font-size: 1rem;
+    }
+
+    .service-item p {
+        font-size: 0.88rem;
+        line-height: 1.4;
+    }
+
+    .services-btn {
+        padding: 0.75em 1.5em;
+        font-size: 0.9rem;
+    }
+
     footer {
-        padding: 1.2em;
+        padding: 1.5em 5vw 1em;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin: 0 auto 1rem;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.8rem;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .footer-map iframe {
+        height: 150px;
     }
 
     footer p {
@@ -515,6 +651,68 @@
     .about-us__decorative {
         width: min(200px, 75vw);
     }
+
+    .services {
+        padding: 2.5em 5vw 2em;
+    }
+
+    .services h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin: 0.2rem 0 1.2rem;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-item {
+        padding: 1rem 0.9rem;
+    }
+
+    .service-icon {
+        width: 65px;
+        height: 50px;
+    }
+
+    .service-item h3 {
+        font-size: 0.95rem;
+    }
+
+    .service-item p {
+        font-size: 0.85rem;
+    }
+
+    .services-btn {
+        padding: 0.7em 1.3em;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 1.2em 4vw 0.8em;
+    }
+
+    .footer-content {
+        gap: 1rem;
+        margin: 0 auto 0.8rem;
+    }
+
+    .footer-logo {
+        width: 90px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.75rem;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.8rem;
+    }
+
+    .footer-map iframe {
+        height: 120px;
+    }
 }
 
 /* Celulares con poca altura */
@@ -549,6 +747,36 @@
 
     footer {
         padding: 2em 6vw 1.2em;
+    }
+
+    .services {
+        padding: 2em 5vw 1.8em;
+    }
+
+    .services h2 {
+        margin: 0.2rem 0 1rem;
+    }
+
+    .services-list {
+        gap: 0.9rem;
+    }
+
+    .service-item {
+        padding: 0.9rem 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 48px;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .service-item p {
+        font-size: 0.82rem;
     }
 
     .footer-content {
@@ -597,6 +825,36 @@
 
     .hero-stats div {
         justify-items: center;
+    }
+
+    .services {
+        padding: 3em 5vw 2.5em;
+    }
+
+    .services h2 {
+        margin: 0.3rem 0 1.3rem;
+    }
+
+    .services-list {
+        gap: 1.1rem;
+    }
+
+    .service-item {
+        padding: 1.1rem 0.95rem;
+        gap: 0.5rem;
+    }
+
+    .service-icon {
+        width: 72px;
+        height: 58px;
+    }
+
+    .service-item h3 {
+        font-size: 0.98rem;
+    }
+
+    .service-item p {
+        font-size: 0.87rem;
     }
 }
 
