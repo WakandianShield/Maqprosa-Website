@@ -625,7 +625,7 @@ header > nav > ul {
 .service-icon {
     width: 100px;
     height: 80px;
-    padding: 0.3rem;
+    padding: 0.1rem;
     border-radius: 1.1rem;
     background: linear-gradient(140deg, rgba(52, 198, 211, 0.2), rgba(255, 255, 255, 0.04));
     border: 1px solid rgba(255, 255, 255, 0.22);

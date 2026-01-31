@@ -476,10 +476,7 @@
     }
 
     .about-us__decorative {
-        margin-top: 1em;
-        justify-self: center;
-        width: min(220px, 78vw);
-        padding: 0.3em;
+        display: none;
     }
 
     .about-us__cta {
@@ -649,7 +646,7 @@
     }
 
     .about-us__decorative {
-        width: min(200px, 75vw);
+        display: none;
     }
 
     .services {
