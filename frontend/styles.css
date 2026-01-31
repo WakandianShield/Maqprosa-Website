@@ -550,19 +550,6 @@ header > nav > ul {
 
 
 
-<<<<<<< HEAD
-footer {
-    background-color: var(--primary-color);
-    padding: 2em;
-    text-align: center;
-    color: var(--font-color);
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    opacity: 0.85;
-=======
 
 
 
@@ -776,5 +763,4 @@ footer {
     margin: 0;
     font-size: 0.88rem;
     opacity: 0.65;
->>>>>>> fca66d9 (Branch)
 }
