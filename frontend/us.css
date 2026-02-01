@@ -1,84 +1,81 @@
-:root {
---primary-color: #274B57;
---secondary-color: #5194a8;
---accent-color: #41d8e7;
---dark-bg: #0e1b21;
---font-color: #ffffff;
---font-family: "Century Gothic", sans-serif;
---gradient-primary: linear-gradient(135deg, #34c6d3, #1f6e86);
---gradient-secondary: linear-gradient(135deg, #41d8e7, #23829b);
---gradient-dark: linear-gradient(180deg, #122a33 0%, #1c3741 45%, #17313a 100%);
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--body-bg);
+    color: var(--font-color);
 }
 
 .hero-us {
-position: relative;
-width: 100%;
-min-height: 85vh;
-padding: 0;
-background:
-radial-gradient(1200px 600px at 5% 15%, rgba(65, 216, 231, 0.25), transparent 70%),
-radial-gradient(800px 400px at 95% 25%, rgba(39, 75, 87, 0.35), transparent 70%),
-linear-gradient(180deg, rgba(7, 20, 24, 0.8), rgba(7, 20, 24, 0.95));color: var(--font-color);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-isolation: isolate;
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0;
+    background-image: url(media/us-bg-hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    isolation: isolate;
 }
 
 .hero-us::before {
-content: "";
-position: absolute;
-inset: 0;
-background:
-radial-gradient(1200px 600px at 5% 15%, rgba(65, 216, 231, 0.25), transparent 70%),
-radial-gradient(800px 400px at 95% 25%, rgba(39, 75, 87, 0.35), transparent 70%),
-linear-gradient(180deg, rgba(7, 20, 24, 0.8), rgba(7, 20, 24, 0.95));
-animation: pulse-glow 8s ease-in-out infinite alternate;
-z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(1200px 600px at 5% 15%, rgba(65, 216, 231, 0.2), transparent 70%),
+        radial-gradient(800px 400px at 95% 25%, rgba(39, 75, 87, 0.3), transparent 70%),
+        linear-gradient(180deg, rgba(7, 20, 24, 0.6), rgba(7, 20, 24, 0.85));
+    animation: pulse-glow-main 8s ease-in-out infinite alternate;
+    z-index: 0;
 }
 
-@keyframes pulse-glow {
-0%, 100% {
-opacity: 0.6;
-transform: scale(1);
-}
-50% {
-opacity: 1;
-transform: scale(1.05);
-}
+@keyframes pulse-glow-main {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
 }
 
 .hero-us::after {
-content: "";
-position: absolute;
-inset: 0;
-background:
-linear-gradient(90deg, transparent 30%, rgba(255, 255, 255, 0.03) 50%, transparent 70%),
-repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px);
-z-index: -1;
-animation: scanlines 12s linear infinite;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, transparent 30%, rgba(255, 255, 255, 0.02) 50%, transparent 70%),
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.015) 2px, rgba(255, 255, 255, 0.015) 4px);
+    z-index: 0;
+    animation: scanlines-main 12s linear infinite;
+    pointer-events: none;
 }
 
-@keyframes scanlines {
-0% {
-background-position: 0 0;
-}
-100% {
-background-position: 0 100px;
-}
+@keyframes scanlines-main {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100px;
+    }
 }
 
 .hero-bg-us {
-position: absolute;
-inset: 0;
-background-image: url(media/us-bg-hero.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-opacity: 0.15;
-z-index: 0;
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(800px 400px at 15% 15%, rgba(81, 148, 168, 0.35), transparent 60%),
+        radial-gradient(600px 300px at 85% 20%, rgba(39, 75, 87, 0.5), transparent 60%),
+        linear-gradient(180deg, rgba(7, 20, 24, 0.4), rgba(7, 20, 24, 0.55));
+    z-index: 0;
 }
 
 .hero-content-us {
@@ -112,18 +109,16 @@ transform: translateY(0);
 }
 }
 
-.hero-kicker {
+.hero-text-us .hero-kicker {
 font-weight: 800;
 text-transform: uppercase;
 letter-spacing: 0.25em;
-font-size: 0.9rem;
-color: #41d8e7;
+font-size: var(--font-size-sm);
+color: var(--accent-color);
 margin-bottom: 0.5em;
 position: relative;
 display: inline-block;
-padding-left: 0;
 }
-
 
 .hero-text-us h1 {
 font-size: clamp(2.8rem, 5vw, 4.2rem);
@@ -133,7 +128,7 @@ color: #fff;
 text-shadow:
 0 4px 8px rgba(39, 75, 87, 0.3),
 0 0 40px rgba(65, 216, 231, 0.2);
-background: linear-gradient(135deg, #fff 0%, #e8f6fb 100%);
+background: var(--gradient-text);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -147,7 +142,7 @@ bottom: -10px;
 left: 0;
 width: 120px;
 height: 4px;
-background: linear-gradient(90deg, #41d8e7, transparent);
+background: var(--gradient-accent-line);
 border-radius: 2px;
 }
 
@@ -155,7 +150,7 @@ border-radius: 2px;
 font-size: clamp(1.15rem, 2.2vw, 1.4rem);
 max-width: 42ch;
 opacity: 0.92;
-color: #e8f6fb;
+color: var(--text-light);
 line-height: 1.7;
 position: relative;
 padding-left: 1.5rem;
@@ -260,8 +255,6 @@ position: relative;
 overflow: hidden;
 }
 
-
-
 @keyframes shimmer {
 0% {
 transform: translateX(-100%);
@@ -290,11 +283,10 @@ transform: scale(1.1);
 opacity: 1;
 }
 
-
 .about-us {
     position: relative;
-    padding: 5rem 6vw;
-    background: #0a1419;
+    padding: var(--section-padding);
+    background: var(--section-bg);
     overflow: visible;
     isolation: isolate;
     display: block;
@@ -302,13 +294,16 @@ opacity: 1;
 }
 
 .about-us::before {
-    display: none;
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 
 .about-container {
     position: relative;
     z-index: 1;
-    max-width: 1300px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
 }
 
@@ -319,7 +314,7 @@ opacity: 1;
 
 .about-intro h2 {
     font-size: clamp(2.2rem, 4.5vw, 3.2rem);
-    color: #fff;
+    color: var(--font-color);
     font-weight: 800;
     margin: 0 0 0.8rem 0;
     line-height: 1.15;
@@ -327,7 +322,7 @@ opacity: 1;
 
 .about-intro p {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    color: rgba(232, 246, 251, 0.8);
+    color: var(--font-color-muted);
     margin: 0;
     max-width: 700px;
     line-height: 1.6;
@@ -373,7 +368,6 @@ opacity: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .stat-card:hover {
     background: linear-gradient(145deg, rgba(65, 216, 231, 0.15), rgba(10, 21, 25, 0.2));
     border-color: rgba(65, 216, 231, 0.4);
@@ -407,7 +401,15 @@ opacity: 1;
     border-radius: 1rem;
     backdrop-filter: blur(8px);
     background: rgba(255, 255, 255, 0.08);
-    padding: 1.2rem;
+    padding: 2.3rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-highlight:hover {
+    background: linear-gradient(135deg, rgba(65, 216, 231, 0.15), rgba(10, 21, 25, 0.1));
+    border-color: rgba(65, 216, 231, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(65, 216, 231, 0.15);
 }
 
 .about-highlight h3 {
@@ -487,13 +489,11 @@ opacity: 1;
     margin: 0;
 }
 
-
 .clients-modern {
     padding: 6rem 8vw;
-    background: #0a1419;
+    background: var(--section-bg);
     position: relative;
 }
-
 
 .clients-grid {
     display: grid;
@@ -535,10 +535,9 @@ opacity: 1;
     opacity: 1;
 }
 
-/* ======== Misión, visión y valores (nuevo) ======== */
 .principles {
     padding: 7rem 8vw 6rem;
-    background: #0a1419;
+    background: var(--section-bg);
     position: relative;
     overflow: hidden;
 }
@@ -601,9 +600,10 @@ opacity: 1;
 }
 
 .principle-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(65, 216, 231, 0.3);
-    background: rgba(65, 216, 231, 0.1);
+    background: linear-gradient(135deg, rgba(65, 216, 231, 0.15), rgba(10, 21, 25, 0.1));
+    border-color: rgba(65, 216, 231, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(65, 216, 231, 0.15);
 }
 
 .principle-card h3 {
