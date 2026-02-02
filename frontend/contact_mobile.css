@@ -1,0 +1,206 @@
+@media screen and (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .map-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .map-embed {
+        height: 400px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .info-card {
+        padding: 1.75rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-contact {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+    .hero-content-contact {
+        padding: 0 3em;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-text-contact {
+        max-width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+    .hero-text-contact h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero-text-contact p {
+        padding-left: 0;
+        border-left: none;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .contact-section {
+        padding: 4rem 0;
+    }
+    .contact-header {
+        margin-bottom: 3rem;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .contact-card {
+        padding: 1.5rem;
+    }
+    .contact-card-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    .contact-card-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    .map-section {
+        padding: 4rem 0;
+    }
+    .map-container {
+        padding: 0 1.5rem;
+    }
+    .map-info {
+        text-align: center;
+    }
+    .map-detail-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .map-btn {
+        margin: 0 auto;
+    }
+    .map-embed {
+        height: 350px;
+    }
+    .info-section-contact {
+        padding: 4rem 0;
+    }
+    .info-section-contact .section-container {
+        padding: 0 1.5rem;
+    }
+    .info-title {
+        margin-bottom: 2rem;
+    }
+    .info-card {
+        padding: 1.5rem;
+    }
+    .info-card-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .info-card-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    .schedule-item {
+        padding: 0.6rem 0.75rem;
+    }
+    .faq-item summary {
+        padding: 0.85rem;
+        font-size: 0.9rem;
+    }
+    .faq-item p {
+        padding: 0 0.85rem 0.85rem;
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero-content-contact {
+        padding: 0 2em;
+    }
+    .hero-text-contact h1 {
+        font-size: clamp(1.5rem, 8vw, 1.9rem);
+    }
+    .hero-text-contact p {
+        font-size: clamp(1rem, 4vw, 1.1rem);
+        max-width: 35ch;
+    }
+    .contact-section {
+        padding: 3rem 0;
+    }
+    .contact-container {
+        padding: 0 1rem;
+    }
+    .contact-header h2 {
+        font-size: 1.6rem;
+    }
+    .contact-header p {
+        font-size: 1rem;
+    }
+    .contact-card {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+    .contact-card-content h3 {
+        font-size: 1.1rem;
+    }
+    .contact-card-content p {
+        font-size: 0.9rem;
+    }
+    .map-section {
+        padding: 3rem 0;
+    }
+    .map-container {
+        padding: 0 1rem;
+    }
+    .map-info h2 {
+        font-size: 1.5rem;
+    }
+    .map-info > p {
+        font-size: 1rem;
+    }
+    .map-embed {
+        height: 300px;
+        border-radius: 1rem;
+    }
+    .info-section-contact {
+        padding: 3rem 0;
+    }
+    .info-section-contact .section-container {
+        padding: 0 1rem;
+    }
+    .info-title {
+        font-size: 1.5rem;
+    }
+    .info-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .schedule-day,
+    .schedule-time {
+        font-size: 0.9rem;
+    }
+    .response-list li {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .hero-content-contact {
+        padding: 0 1.5em;
+    }
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-card-action {
+        margin-top: 0.5rem;
+    }
+    .map-embed {
+        height: 250px;
+    }
+}
