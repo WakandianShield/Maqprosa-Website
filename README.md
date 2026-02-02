@@ -1,4 +1,4 @@
-# 🏭 MAQPROSA Website
+# MAQPROSA Website
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=plastic)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white&style=plastic)
@@ -8,15 +8,11 @@
 
 Sitio web oficial de MAQPROSA, empresa líder en maquinaria y servicios industriales ubicada en Guadalajara, Jalisco, México.
 
-## 🌐 Demo
-
-🔗 [Ver sitio web en vivo](https://wakandianshield.github.io/MAQPROSA-WEBSITE/)
-
-## 📋 Descripción
+## Descripción
 
 MAQPROSA es una empresa con más de 10 años de experiencia ofreciendo soluciones industriales integrales. Este sitio web presenta sus servicios, equipos y formas de contacto.
 
-## 🛠️ Servicios
+## Servicios
 
 - **Fabricación y reparación de moldes**
 - **Mecanizado CNC** (Torno y Fresado)
@@ -25,7 +21,7 @@ MAQPROSA es una empresa con más de 10 años de experiencia ofreciendo solucione
 - **Piezas mecánicas personalizadas**
 - **Manufactura de precisión**
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 MAQPROSA-WEBSITE/
@@ -47,7 +43,7 @@ MAQPROSA-WEBSITE/
         └── services/       # Imágenes de servicios
 ```
 
-## ✨ Características
+## Características
 
 - ✅ Diseño responsive (móvil y escritorio)
 - ✅ Optimizado para SEO
@@ -55,11 +51,11 @@ MAQPROSA-WEBSITE/
 - ✅ Navegación intuitiva
 - ✅ Soporte 24/7 mencionado
 
-## 📍 Ubicación
+## Ubicación
 
 Guadalajara, Jalisco, México
 
-## 📞 Contacto
+## Contacto
 
 Visita la [página de contacto](https://wakandianshield.github.io/MAQPROSA-WEBSITE/contact.html) para más información.
 
