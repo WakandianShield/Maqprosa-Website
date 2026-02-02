@@ -1,14 +1,289 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
     <head>
+        <!-- Meta tags básicos -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- SEO Meta Tags Principales -->
+        <title>MAQPROSA | Maquinaria y Servicios Industriales en Guadalajara, Jalisco</title>
+        <meta name="description" content="MAQPROSA: Empresa líder en maquinaria industrial, fabricación de moldes, mecanizado CNC, electroerosión, soldadura TIG/MIG y piezas mecánicas personalizadas en Guadalajara, Jalisco. +10 años de experiencia. Soporte técnico 24/7." />
+        <meta name="keywords" content="maquinaria industrial, servicios industriales, fabricación de moldes, reparación de moldes, torno CNC, fresado CNC, mecanizado CNC, electroerosión, soldadura TIG, soldadura MIG, piezas mecánicas, manufactura de precisión, Guadalajara, Jalisco, México, MAQPROSA" />
+        <meta name="author" content="MAQPROSA" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="general" />
+        <meta name="distribution" content="global" />
+        <link rel="canonical" href="https://maqprosa.com/" />
+        
+        <!-- Geolocalización -->
+        <meta name="geo.region" content="MX-JAL" />
+        <meta name="geo.placename" content="Guadalajara, Jalisco" />
+        <meta name="geo.position" content="20.5919;-103.3326" />
+        <meta name="ICBM" content="20.5919, -103.3326" />
+        
+        <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://maqprosa.com/" />
+        <meta property="og:title" content="MAQPROSA | Maquinaria y Servicios Industriales en Guadalajara" />
+        <meta property="og:description" content="Soluciones industriales integrales: fabricación de moldes, mecanizado CNC, electroerosión, soldadura y más. +10 años de experiencia, soporte 24/7." />
+        <meta property="og:image" content="https://maqprosa.com/frontend/media/fb-og.png" />
+        <meta property="og:image:secure_url" content="https://maqprosa.com/frontend/media/fb-og.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="MAQPROSA - Maquinaria y Servicios Industriales" />
+        <meta property="og:site_name" content="MAQPROSA" />
+        <meta property="og:locale" content="es_MX" />
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@maqprosa" />
+        <meta name="twitter:creator" content="@maqprosa" />
+        <meta name="twitter:url" content="https://maqprosa.com/" />
+        <meta name="twitter:title" content="MAQPROSA | Maquinaria y Servicios Industriales" />
+        <meta name="twitter:description" content="Soluciones industriales integrales: fabricación de moldes, mecanizado CNC, electroerosión, soldadura TIG/MIG. +10 años de experiencia en Guadalajara." />
+        <meta name="twitter:image" content="https://maqprosa.com/frontend/media/twt-og.png" />
+        <meta name="twitter:image:alt" content="MAQPROSA - Maquinaria y Servicios Industriales" />
+        
+        <!-- Favicon y Apple Touch Icons -->
+        <link rel="icon" type="image/png" href="frontend/media/logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="frontend/media/logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="frontend/media/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="frontend/media/logo.png" />
+        <meta name="msapplication-TileImage" content="frontend/media/logo.png" />
+        <meta name="msapplication-TileColor" content="#0f1c21" />
+        <meta name="theme-color" content="#0f1c21" />
+        
+        <!-- Preconnect para optimización de carga -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
+        <!-- Hojas de estilo -->
         <link rel="stylesheet" href="frontend/styles.css" />
         <link rel="stylesheet" href="frontend/styles_mobile.css" />
+        
+        <!-- Scripts -->
         <script ref="script" src="frontend/script.js" defer></script>
         <script ref="script" src="frontend/script_navbar.js" defer></script>
-        <link rel="icon" type="image/png" href="frontend/media/logo.png" />
-        <title>INICIO | MAQPROSA</title>
+        
+        <!-- Schema.org JSON-LD - Organization -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MAQPROSA",
+            "alternateName": "Maquinaria y Procesos Industriales SA",
+            "url": "https://maqprosa.com",
+            "logo": "https://maqprosa.com/frontend/media/logo.png",
+            "description": "Empresa líder en maquinaria industrial, fabricación de moldes, mecanizado CNC, electroerosión y soldadura en Guadalajara, Jalisco.",
+            "foundingDate": "2015",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Guadalajara",
+                "addressLocality": "Guadalajara",
+                "addressRegion": "Jalisco",
+                "postalCode": "44100",
+                "addressCountry": "MX"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 20.5919,
+                "longitude": -103.3326
+            },
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+52-33-3670-8859",
+                    "contactType": "customer service",
+                    "availableLanguage": ["Spanish", "English"],
+                    "areaServed": "MX"
+                },
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+52-33-2680-2725",
+                    "contactType": "sales",
+                    "availableLanguage": ["Spanish", "English"],
+                    "areaServed": "MX"
+                }
+            ],
+            "email": "maqprosa.adm@gmail.com",
+            "sameAs": ["https://wa.me/523326802725"]
+        }
+        </script>
+        
+        <!-- Schema.org JSON-LD - LocalBusiness -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "MAQPROSA",
+            "image": "https://maqprosa.com/frontend/media/logo.png",
+            "@id": "https://maqprosa.com",
+            "url": "https://maqprosa.com",
+            "telephone": "+52-33-3670-8859",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Guadalajara",
+                "addressLocality": "Guadalajara",
+                "addressRegion": "Jalisco",
+                "postalCode": "44100",
+                "addressCountry": "MX"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 20.5919,
+                "longitude": -103.3326
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "08:00",
+                    "closes": "18:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "09:00",
+                    "closes": "14:00"
+                }
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Servicios Industriales",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Fabricación y Reparación de Moldes",
+                            "description": "Diseñamos, fabricamos y reparamos moldes con alta precisión."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Torno y Fresado CNC",
+                            "description": "Mecanizado CNC de alta precisión para piezas complejas."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Corte por Electroerosión",
+                            "description": "Electroerosión por hilo y penetración para cortes de alta exactitud."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Soldadura TIG y MIG",
+                            "description": "Soldadura especializada para componentes industriales."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Medición de Precisión",
+                            "description": "Control dimensional y verificación de piezas."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Piezas Mecánicas Personalizadas",
+                            "description": "Fabricación de piezas mecánicas a medida."
+                        }
+                    }
+                ]
+            }
+        }
+        </script>
+        
+        <!-- Schema.org JSON-LD - WebSite con SearchAction -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "MAQPROSA",
+            "url": "https://maqprosa.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://maqprosa.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
+        
+        <!-- Schema.org JSON-LD - BreadcrumbList -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://maqprosa.com/"
+                }
+            ]
+        }
+        </script>
+        
+        <!-- Schema.org JSON-LD - FAQPage -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Qué servicios ofrece MAQPROSA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "MAQPROSA ofrece servicios de fabricación y reparación de moldes, torno y fresado CNC, corte por electroerosión, soldadura TIG y MIG, medición de precisión y fabricación de piezas mecánicas personalizadas."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Dónde se encuentra ubicado MAQPROSA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "MAQPROSA está ubicado en Guadalajara, Jalisco, México. Ofrecemos servicios a toda la región occidente del país."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿MAQPROSA ofrece soporte técnico 24/7?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí, MAQPROSA ofrece soporte técnico las 24 horas del día, los 7 días de la semana para atender emergencias industriales."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cuántos años de experiencia tiene MAQPROSA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "MAQPROSA cuenta con más de 10 años de experiencia en el sector industrial, habiendo completado más de 250 proyectos exitosos."
+                    }
+                }
+            ]
+        }
+        </script>
     </head>
     <body>
         <header>
