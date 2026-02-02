@@ -116,6 +116,7 @@ body {
 .hero-text-equipment h1 {
     font-size: clamp(2.4rem, 4.5vw, 3.6rem);
     margin: 2rem 0;
+    margin-top: 0.5rem;
     line-height: 1.08;
     color: #fff;
     text-shadow:
@@ -150,16 +151,7 @@ body {
     border-left: 3px solid rgba(65, 216, 231, 0.3);
 }
 
-.hero-actions-equipment {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin: 2rem 0 0;
-    align-items: center;
-    padding-left: 1.5rem;
-}
-
-.hero-btn-equipment {
+.hero-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -169,26 +161,66 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 1.05rem;
-    transition: var(--transition-smooth);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     z-index: 1;
-    border: var(--border-light);
+    border: none;
     letter-spacing: 0.05em;
-    background: var(--gradient-primary);
-    box-shadow:
-        0 15px 35px rgba(52, 198, 211, 0.4),
-        0 0 60px rgba(65, 216, 231, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.hero-btn-equipment:hover {
-    background: var(--gradient-secondary);
-    transform: translateY(-3px) scale(1.02);
+.hero-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s;
+    z-index: -1;
+}
+
+.hero-btn:hover::before {
+    left: 100%;
+}
+
+.hero-btn--primary {
+    background: linear-gradient(135deg, #34c6d3 0%, #1f6e86 100%);
     box-shadow:
-        0 20px 45px rgba(65, 216, 231, 0.5),
-        0 0 80px rgba(65, 216, 231, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 15px 35px rgba(52, 198, 211, 0.4),
+    0 0 60px rgba(65, 216, 231, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transform: translateY(0);
+}
+
+.hero-btn--primary:hover {
+    background: linear-gradient(135deg, #41d8e7 0%, #23829b 100%);
+    box-shadow:
+    0 20px 45px rgba(65, 216, 231, 0.5),
+    0 0 80px rgba(65, 216, 231, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.hero-btn--secondary {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #e8f6fb;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.hero-btn--secondary:hover {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .equipment-section {
