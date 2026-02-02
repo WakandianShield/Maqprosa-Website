@@ -45,11 +45,11 @@ MAQPROSA-WEBSITE/
 
 ## Características
 
-- ✅ Diseño responsive (móvil y escritorio)
-- ✅ Optimizado para SEO
-- ✅ Open Graph para redes sociales
-- ✅ Navegación intuitiva
-- ✅ Soporte 24/7 mencionado
+- Diseño responsive (móvil y escritorio)
+- Optimizado para SEO
+- Open Graph para redes sociales
+- Navegación intuitiva
+- Soporte 24/7 mencionado
 
 ## Ubicación
 
