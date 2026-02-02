@@ -139,8 +139,8 @@
     }
 
     .hero-stats {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.9rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
         width: 100%;
         max-width: 520px;
         margin: 0 auto;

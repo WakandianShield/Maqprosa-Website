@@ -8,7 +8,7 @@ body {
 .hero-equipment {
     position: relative;
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     padding: 0;
     background-image: url('media/bg_no_blur.jpg');
     background-size: cover;
@@ -84,9 +84,8 @@ body {
     width: 90vw;
     min-height: 70vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     padding: 7em 0 2.5em;
 }
 
@@ -95,8 +94,8 @@ body {
     margin-left: 3vw;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    animation: fadeInUp-eq 1s ease-out;
+    gap: 0.6rem;
+    animation: fadeInUp-main 1s ease-out;
 }
 
 @keyframes fadeInUp-eq {
@@ -110,21 +109,14 @@ body {
     }
 }
 
-.equipment-kicker {
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    font-size: var(--font-size-sm);
-    color: var(--accent-color);
-    margin-bottom: 0.5em;
-    position: relative;
-    display: inline-block;
+.hero-kicker {
+    font-size: var(--font-size-xs);
 }
 
 .hero-text-equipment h1 {
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    margin: 0.2em 0 0.4em;
-    line-height: 1.05;
+    font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+    margin: 2rem 0;
+    line-height: 1.08;
     color: #fff;
     text-shadow:
         0 4px 8px rgba(39, 75, 87, 0.3),
@@ -139,10 +131,10 @@ body {
 .hero-text-equipment h1::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 0;
-    width: 120px;
-    height: 4px;
+    width: 100px;
+    height: 3px;
     background: var(--gradient-accent-line);
     border-radius: 2px;
 }

@@ -268,7 +268,7 @@ header > nav > ul {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.22em;
-    font-size: 0.8rem;
+    font-size: var(--font-size-xs);
     color: var(--accent-color);
     margin-top: 1.5rem;
     margin-bottom: 0;
