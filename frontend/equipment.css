@@ -539,7 +539,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.capability-item h4 {
+.capability-item h3 {
     font-size: 1.1rem;
     color: var(--font-color);
     margin-bottom: 0.5rem;

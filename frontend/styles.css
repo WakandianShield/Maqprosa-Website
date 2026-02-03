@@ -95,9 +95,12 @@ header > nav > ul {
 }
 
 .logo-nav {
-    height: 70px;
+    height: auto;
+    max-height: 45px;
+    width: auto;
     margin: 0;
-    padding: 0 0em;
+    padding: 0;
+    object-fit: contain;
 }
 
 .nav-link {
@@ -1099,18 +1102,8 @@ footer {
     margin-bottom: 0.9rem;
 }
 
-.footer-section h3,
-.footer-section h4 {
-    margin: 0 0 0.65rem;
-    letter-spacing: 0.02em;
-}
-
 .footer-section h3 {
-    font-size: 1.25rem;
-    color: var(--font-color);
-}
-
-.footer-section h4 {
+    margin: 0 0 0.65rem;
     font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 0.18em;

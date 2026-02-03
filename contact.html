@@ -3,23 +3,34 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Preload de recursos críticos -->
+        <link rel="preload" href="frontend/styles.css" as="style" />
+        <link rel="preload" href="frontend/media/logo-nav.avif" as="image" type="image/avif" />
+        
+        <!-- Hojas de estilo -->
         <link rel="stylesheet" href="frontend/styles.css" />
-        <link rel="stylesheet" href="frontend/styles_mobile.css" />
+        <link rel="stylesheet" href="frontend/styles_mobile.css" media="screen and (max-width: 1024px)" />
         <link rel="stylesheet" href="frontend/contact.css" />
-        <link rel="stylesheet" href="frontend/contact_mobile.css" />
-        <script ref="script" src="frontend/script.js" defer></script>
-        <script ref="script" src="frontend/script_navbar.js" defer></script>
+        <link rel="stylesheet" href="frontend/contact_mobile.css" media="screen and (max-width: 1024px)" />
+        
+        <!-- Scripts -->
+        <script src="frontend/script.js" defer></script>
+        <script src="frontend/script_navbar.js" defer></script>
+        
         <link rel="icon" type="image/png" href="frontend/media/logo.avif" />
         <title>CONTACTO | MAQPROSA</title>
     </head>
     <body>
         <header>
             <nav>
-                <a href="index.html#home" class="nav-link nav-logo">
+                <a href="index.html#home" class="nav-link nav-logo" aria-label="MAQPROSA - Ir al inicio">
                     <img
                         class="logo-nav"
                         src="frontend/media/logo-nav.avif"
                         alt="Logo MAQPROSA"
+                        fetchpriority="high"
+                        decoding="async"
                     />
                 </a>
                 <div class="menu-toggle" id="menuToggle">
@@ -266,7 +277,7 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                                 <div>
-                                    <h4>Dirección</h4>
+                                    <h3>Dirección</h3>
                                     <p>Guadalajara, Jalisco, México</p>
                                 </div>
                             </div>
@@ -286,7 +297,7 @@
                                     ></polyline>
                                 </svg>
                                 <div>
-                                    <h4>Horario de atención</h4>
+                                    <h3>Horario de atención</h3>
                                     <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
                                     <p>Sábado: 9:00 AM - 2:00 PM</p>
                                 </div>
@@ -323,6 +334,7 @@
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de ubicación de MAQPROSA en Google Maps"
                         ></iframe>
                     </div>
                 </div>
@@ -397,13 +409,17 @@
                         class="footer-logo"
                         src="frontend/media/logo-footer.avif"
                         alt="Logo MAQPROSA"
+                        width="120"
+                        height="40"
+                        loading="lazy"
+                        decoding="async"
                     />
                     <p>
                         Impulsamos la productividad con soluciones confiables.
                     </p>
                 </div>
                 <div class="footer-section">
-                    <h4>Navegación</h4>
+                    <h3>Navegación</h3>
                     <ul>
                         <li><a href="us.html">Sobre Nosotros</a></li>
                         <li><a href="services.html">Servicios</a></li>
@@ -412,7 +428,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h3>Contacto</h3>
                     <a href="mailto:maqprosa.adm@gmail.com"
                         >Email: maqprosa.adm@gmail.com</a
                     >
@@ -422,7 +438,7 @@
                     <a href="tel:+523336708859">Teléfono: +52 33 3670 8859</a>
                 </div>
                 <div class="footer-section footer-map">
-                    <h4>Ubicación</h4>
+                    <h3>Ubicación</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8265.29716269699!2d-103.33255174720152!3d20.59193662450971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b293394a0339%3A0xa8bdd4ad61870829!2sMaqprosa!5e0!3m2!1ses-419!2smx!4v1769815293856!5m2!1ses-419!2smx"
                         width="400"
@@ -431,6 +447,7 @@
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa de ubicación de MAQPROSA en Google Maps"
                     ></iframe>
                 </div>
             </div>
